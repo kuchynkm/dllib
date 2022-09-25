@@ -93,3 +93,10 @@ class ReLu(Activation):
 
     def __init__(self) -> None:
         super().__init__(fn=math.relu, fn_prime=math.relu_prime)
+
+
+class Sigmoid(Activation):
+    """ReLu activation layer."""
+
+    def __init__(self) -> None:
+        super().__init__(fn=math.sigmoid, fn_prime=math.sigmoid_prime)

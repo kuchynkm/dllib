@@ -8,7 +8,7 @@ from dllib.tensors import Tensor
 
 
 class MeanSquaredError(Loss):
-    """Mean squared error."""
+    """Mean squared error loss."""
 
     def __init__(self) -> None:
         super().__init__(name="mean_square_error")
