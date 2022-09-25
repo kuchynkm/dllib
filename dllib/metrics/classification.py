@@ -4,7 +4,7 @@ Classification loss functions.
 import numpy as np
 
 from dllib.metrics.loss import Loss
-from dllib.tensors.tensor import Tensor
+from dllib.tensors import Tensor
 
 
 class BinaryCrossEntropy(Loss):
@@ -16,10 +16,3 @@ class BinaryCrossEntropy(Loss):
 
     def grad(self, y_true: Tensor, y_pred: Tensor) -> Tensor:
         return (y_true - y_pred) / (y_pred * (1 - y_pred))
-
-
-y_true = np.array([0, 1, 0, 0])
-y_pred = np.array([0.6, 0.3, 0.2, 0.8])
-bce = BinaryCrossEntropy()
-print("loss:", bce(y_true, y_pred))
-print("grad:", bce.grad(y_true, y_pred))

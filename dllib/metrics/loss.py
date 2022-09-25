@@ -4,7 +4,7 @@ Abstrac loss function class.
 
 from abc import ABC, abstractmethod
 
-from dllib.tensors.tensor import Tensor
+from dllib.tensors import Tensor
 
 
 class Loss(ABC):

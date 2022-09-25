@@ -48,4 +48,4 @@ repos:
         types: [python]
         require_serial: true
         args:
-          - --disable=unused-argument,missing-docstring,redefined-outer-name,invalid-name
+          - --disable=unused-argument,missing-docstring,redefined-outer-name,invalid-name, too-few-public-methods, too-many-arguments
