@@ -20,3 +20,6 @@ def sigmoid(input_tensor: Tensor) -> Tensor:
 
 def sigmoid_prime(input_tensor: Tensor) -> Tensor:
     return sigmoid(input_tensor) * (1 - sigmoid(input_tensor))
+
+
+EPSILON = 1e-6
